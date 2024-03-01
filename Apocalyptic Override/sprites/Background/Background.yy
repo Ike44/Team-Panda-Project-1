@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "brick_stack1_spr",
-  "bbox_bottom": 49,
+  "name": "Background",
+  "bbox_bottom": 394,
   "bbox_left": 0,
-  "bbox_right": 69,
+  "bbox_right": 1219,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3d0523a9-aea6-4dd3-97c1-525adc356a09",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b0f6d279-3447-4c6d-ac39-fe17330e8860",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 50,
+  "height": 395,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a02f7059-1405-4a24-9749-1e08091c13e9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a2dd696a-2511-44d1-9690-171bf6f41963","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "brick_stack1_spr",
+    "name": "Background",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3d0523a9-aea6-4dd3-97c1-525adc356a09","path":"sprites/brick_stack1_spr/brick_stack1_spr.yy",},},},"Disabled":false,"id":"478e70df-98b7-411c-a987-16c1b0082896","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b0f6d279-3447-4c6d-ac39-fe17330e8860","path":"sprites/Background/Background.yy",},},},"Disabled":false,"id":"bcb229ed-59ef-4633-837e-5764426db747","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 35,
-    "yorigin": 25,
+    "xorigin": 0,
+    "yorigin": 15,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 70,
+  "width": 1220,
 }
