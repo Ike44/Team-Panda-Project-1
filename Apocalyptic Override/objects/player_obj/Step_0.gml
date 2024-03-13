@@ -60,6 +60,9 @@ street_plant1_obj, street_plant2_obj, street_pole_obj, tent1_obj, tent2_obj, ten
     }
 }
 
+
+
 // Update position
 x += charspeed_x;
 y += charspeed_y;
+
