@@ -12,20 +12,25 @@ deceleration = 2;
 if (keyboard_check(vk_left)) {
     charspeed_x -= acceleration;
 	image_xscale = -1;
+	sprite_index = player_run_spr; // Set appropriate sprite
 }
 if (keyboard_check(vk_right)) {
     charspeed_x += acceleration;
 	image_xscale = 1;
+	sprite_index = player_run_spr; // Set appropriate sprite
 }
 if (keyboard_check(vk_up)) {
     charspeed_y -= acceleration;
-    // sprite_index = player_back_spr; // Set appropriate sprite
+    sprite_index = player_run_spr; // Set appropriate sprite
 }
 if (keyboard_check(vk_down)) {
     charspeed_y += acceleration;
-    //sprite_index = player_front_spr; // Set appropriate sprite
+    sprite_index = player_run_spr; // Set appropriate sprite
 }
-
+if (keyboard_check(vk_space)) {
+    //charspeed_y += acceleration;
+    //sprite_index = player_run_spr; // Set appropriate sprite
+}
 
 // Apply speed
 if (speed > max_speed) {

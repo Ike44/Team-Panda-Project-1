@@ -12,6 +12,7 @@
   "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animations","folderPath":"folders/Animations.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
@@ -58,6 +59,7 @@
     {"id":{"name":"red_circle_obj","path":"objects/red_circle_obj/red_circle_obj.yy",},},
     {"id":{"name":"brick_stack2_obj","path":"objects/brick_stack2_obj/brick_stack2_obj.yy",},},
     {"id":{"name":"small_street_plant2_spr","path":"sprites/small_street_plant2_spr/small_street_plant2_spr.yy",},},
+    {"id":{"name":"Sprite32","path":"sprites/Sprite32/Sprite32.yy",},},
     {"id":{"name":"tent2_obj","path":"objects/tent2_obj/tent2_obj.yy",},},
     {"id":{"name":"water_pool1_obj","path":"objects/water_pool1_obj/water_pool1_obj.yy",},},
     {"id":{"name":"tent1_obj","path":"objects/tent1_obj/tent1_obj.yy",},},
@@ -67,6 +69,7 @@
     {"id":{"name":"grass1_obj","path":"objects/grass1_obj/grass1_obj.yy",},},
     {"id":{"name":"street_plant1_spr","path":"sprites/street_plant1_spr/street_plant1_spr.yy",},},
     {"id":{"name":"street_device_obj","path":"objects/street_device_obj/street_device_obj.yy",},},
+    {"id":{"name":"player_run_spr","path":"sprites/player_run_spr/player_run_spr.yy",},},
     {"id":{"name":"street_fixture1_spr","path":"sprites/street_fixture1_spr/street_fixture1_spr.yy",},},
     {"id":{"name":"street_lamp_obj","path":"objects/street_lamp_obj/street_lamp_obj.yy",},},
     {"id":{"name":"brick_stack1_obj","path":"objects/brick_stack1_obj/brick_stack1_obj.yy",},},
