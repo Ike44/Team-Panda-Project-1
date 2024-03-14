@@ -4,5 +4,5 @@ if (instance_exists(bullet_obj)) {
 	alarm[0] = room_speed * 2;
 }
 
-room_restart();
+room_goto(GameOver);
 
