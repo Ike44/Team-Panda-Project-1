@@ -1,9 +1,9 @@
-/// @description Allows "Play Button" to be pressed since its not a sprite
+/// @description Insert description here
 // You can write your code in this editor
 
 // Start animation on click
-if (!animating && mouse_x >= 643 && mouse_x <= 648 + string_width("Play") &&
-    mouse_y >= y && mouse_y <= y + string_height("Play") && mouse_check_button_pressed(mb_left)) {
+if (!animating && mouse_x >= 100 && mouse_x <= 103 + string_width("Yes") &&
+    mouse_y >= y && mouse_y <= y + string_height("Yes") && mouse_check_button_pressed(mb_left)) {
     animating = true;
 }
 
@@ -16,3 +16,8 @@ if (animating) {
         room_goto(Room1); // Change the room after the animation finishes
     }
 }
+
+
+
+
+
