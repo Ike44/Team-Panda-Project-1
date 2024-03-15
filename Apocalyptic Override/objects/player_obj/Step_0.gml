@@ -33,7 +33,7 @@ if (keyboard_check_pressed(vk_space) && state != PlayerState.Attacking && state 
     state = PlayerState.Attacking;
     sprite_index = player_attack_spr; 
     image_index = 0; 
-    image_speed = 0.1; 
+    image_speed = 2; 
     attackCooldown = room_speed * 1; // 1 second cooldown
 }
 
@@ -44,13 +44,32 @@ if (state == PlayerState.Attacking && image_index >= image_number - 1) {
     image_speed = 1; 
 }
 
+// During the attack
+if (state == PlayerState.Attacking && floor(image_index) == 4) {
+    // Collision check with enemy_obj
+    var enemy_hit = instance_place(x, y, enemy_obj);
+    if (enemy_hit != noone) { 
+        with (enemy_hit) {
+            // Start enemy death animation
+            sprite_index = enemy_death_spr;
+            image_index = 0;
+            image_speed = 1;
+            alarm[2] = image_number;
+        }
+    }
+}
+
+if (state == PlayerState.Attacking && image_index >= image_number - 1 && attackHit) {
+    attackHit = false;
+}	
+	
 // Check for collision with a bullet
 if (place_meeting(x, y, bullet_obj) && !isDead) {
     isDead = true;
     state = PlayerState.Dying;
     sprite_index = player_death_spr;
     image_index = 0;
-    image_speed = 0.1; 
+    image_speed = 1; 
 }
 
 // Process death if the player has been hit
@@ -58,7 +77,7 @@ if (isDead && state != PlayerState.Dying) {
     state = PlayerState.Dying;
     sprite_index = player_death_spr;
     image_index = 0;
-    image_speed = 0.1;
+    image_speed = 1;
 }
 
 // Process the end of the death animation

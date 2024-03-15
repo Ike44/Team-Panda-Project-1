@@ -32,6 +32,7 @@
     {"name":"fontExit2_obj","order":34,"path":"objects/fontExit2_obj/fontExit2_obj.yy",},
     {"name":"player_death_spr","order":3,"path":"sprites/player_death_spr/player_death_spr.yy",},
     {"name":"small_street_plant1_obj","order":7,"path":"objects/small_street_plant1_obj/small_street_plant1_obj.yy",},
+    {"name":"enemy_death_spr","order":4,"path":"sprites/enemy_death_spr/enemy_death_spr.yy",},
     {"name":"street_fixture1_obj","order":12,"path":"objects/street_fixture1_obj/street_fixture1_obj.yy",},
     {"name":"obj_controller","order":35,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"enemy_death","order":34,"path":"sprites/enemy_death/enemy_death.yy",},
