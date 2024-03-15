@@ -12,24 +12,63 @@ deceleration = 2;
 if (keyboard_check(vk_left)) {
     charspeed_x -= acceleration;
 	image_xscale = -1;
-	sprite_index = player_run_spr; // Set appropriate sprite
+	sprite_index = player_run_spr; 
 }
 if (keyboard_check(vk_right)) {
     charspeed_x += acceleration;
 	image_xscale = 1;
-	sprite_index = player_run_spr; // Set appropriate sprite
+	sprite_index = player_run_spr; 
 }
 if (keyboard_check(vk_up)) {
     charspeed_y -= acceleration;
-    sprite_index = player_run_spr; // Set appropriate sprite
+    sprite_index = player_run_spr; 
 }
 if (keyboard_check(vk_down)) {
     charspeed_y += acceleration;
-    sprite_index = player_run_spr; // Set appropriate sprite
+    sprite_index = player_run_spr; 
 }
-if (keyboard_check(vk_space)) {
-    //charspeed_y += acceleration;
-    //sprite_index = player_run_spr; // Set appropriate sprite
+
+// Start attack sequence when spacebar is pressed
+if (keyboard_check_pressed(vk_space) && state != PlayerState.Attacking && state != PlayerState.Dying) {
+    state = PlayerState.Attacking;
+    sprite_index = player_attack_spr; 
+    image_index = 0; 
+    image_speed = 0.1; 
+    attackCooldown = room_speed * 1; // 1 second cooldown
+}
+
+// Check if attack animation is finished
+if (state == PlayerState.Attacking && image_index >= image_number - 1) {
+    state = PlayerState.Idle;
+    sprite_index = player_idle_spr; // Return to idle sprite after attack
+    image_speed = 1; 
+}
+
+// Check for collision with a bullet
+if (place_meeting(x, y, bullet_obj) && !isDead) {
+    isDead = true;
+    state = PlayerState.Dying;
+    sprite_index = player_death_spr;
+    image_index = 0;
+    image_speed = 0.1; 
+}
+
+// Process death if the player has been hit
+if (isDead && state != PlayerState.Dying) {
+    state = PlayerState.Dying;
+    sprite_index = player_death_spr;
+    image_index = 0;
+    image_speed = 0.1;
+}
+
+// Process the end of the death animation
+if (state == PlayerState.Dying && image_index >= image_number - 1) {
+    room_goto(GameOver);
+}
+
+// Decrease cooldowns if they are above zero
+if (attackCooldown > 0) {
+    attackCooldown -= 1;
 }
 
 // Apply speed

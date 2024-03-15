@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Start animation on click
-if (!animating && mouse_x >= 650 && mouse_x <= 650 + string_width("Play") &&
+if (!animating && mouse_x >= 643 && mouse_x <= 648 + string_width("Play") &&
     mouse_y >= y && mouse_y <= y + string_height("Play") && mouse_check_button_pressed(mb_left)) {
     animating = true;
 }
