@@ -34,8 +34,11 @@
     {"name":"small_street_plant1_obj","order":7,"path":"objects/small_street_plant1_obj/small_street_plant1_obj.yy",},
     {"name":"street_fixture1_obj","order":12,"path":"objects/street_fixture1_obj/street_fixture1_obj.yy",},
     {"name":"obj_controller","order":35,"path":"objects/obj_controller/obj_controller.yy",},
+
     {"name":"enemy_death","order":34,"path":"sprites/enemy_death/enemy_death.yy",},
     {"name":"gameOverBackground","order":35,"path":"sprites/gameOverBackground/gameOverBackground.yy",},
+    {"name":"Path1","order":5,"path":"paths/Path1/Path1.yy",},
+
     {"name":"street_fixture3_spr","order":4,"path":"sprites/street_fixture3_spr/street_fixture3_spr.yy",},
     {"name":"street_fixture3_obj","order":14,"path":"objects/street_fixture3_obj/street_fixture3_obj.yy",},
     {"name":"brick_stack1_spr","order":14,"path":"sprites/brick_stack1_spr/brick_stack1_spr.yy",},

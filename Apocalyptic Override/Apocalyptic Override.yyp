@@ -54,8 +54,11 @@
     {"id":{"name":"small_street_plant1_obj","path":"objects/small_street_plant1_obj/small_street_plant1_obj.yy",},},
     {"id":{"name":"street_fixture1_obj","path":"objects/street_fixture1_obj/street_fixture1_obj.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+
     {"id":{"name":"enemy_death","path":"sprites/enemy_death/enemy_death.yy",},},
     {"id":{"name":"gameOverBackground","path":"sprites/gameOverBackground/gameOverBackground.yy",},},
+    {"id":{"name":"Path1","path":"paths/Path1/Path1.yy",},},
+
     {"id":{"name":"street_fixture3_spr","path":"sprites/street_fixture3_spr/street_fixture3_spr.yy",},},
     {"id":{"name":"street_fixture3_obj","path":"objects/street_fixture3_obj/street_fixture3_obj.yy",},},
     {"id":{"name":"brick_stack1_spr","path":"sprites/brick_stack1_spr/brick_stack1_spr.yy",},},
