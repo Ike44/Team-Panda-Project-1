@@ -28,47 +28,49 @@ if (keyboard_check(vk_down)) {
     sprite_index = player_run_spr; 
 }
 
-// Start attack sequence when spacebar is pressed
-if (keyboard_check_pressed(vk_space) && state != PlayerState.Attacking && state != PlayerState.Dying) {
+// Handle attacking
+if (keyboard_check_pressed(vk_space) && state != PlayerState.Attacking && attackCooldown <= 0) {
     state = PlayerState.Attacking;
-    sprite_index = player_attack_spr; 
-    image_index = 0; 
-    image_speed = 0.1; 
-    attackCooldown = room_speed * 1; // 1 second cooldown
+    sprite_index = player_attack_spr;
+    image_index = 0;
+    image_speed = 2.5; 
+    attackCooldown = room_speed * 2; 
 }
 
-// Check if attack animation is finished
+// Cooldown and state management
 if (state == PlayerState.Attacking && image_index >= image_number - 1) {
     state = PlayerState.Idle;
-    sprite_index = player_idle_spr; // Return to idle sprite after attack
+    sprite_index = player_idle_spr; 
     image_speed = 1; 
 }
 
-// Check for collision with a bullet
+
+// Decrease cooldowns 
+if (attackCooldown > 0) {
+    attackCooldown -= 1;
+}
+
+
+// Checks for collision with a bullet
 if (place_meeting(x, y, bullet_obj) && !isDead) {
     isDead = true;
     state = PlayerState.Dying;
     sprite_index = player_death_spr;
     image_index = 0;
-    image_speed = 0.1; 
+    image_speed = 1; 
 }
 
-// Process death if the player has been hit
+// Process death if player has been hit
 if (isDead && state != PlayerState.Dying) {
     state = PlayerState.Dying;
     sprite_index = player_death_spr;
     image_index = 0;
-    image_speed = 0.1;
+    image_speed = .5;
 }
 
 // Process the end of the death animation
 if (state == PlayerState.Dying && image_index >= image_number - 1) {
     room_goto(GameOver);
-}
-
-// Decrease cooldowns if they are above zero
-if (attackCooldown > 0) {
-    attackCooldown -= 1;
 }
 
 // Apply speed

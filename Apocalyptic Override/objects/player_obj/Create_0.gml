@@ -1,6 +1,10 @@
 // Create Event
 alarm[0] = room_speed/3; // Change sprite every 2 seconds
 
+// Initialize player health
+maxHealth = 3; // The player can take 3 hits before dying
+currentHealth = maxHealth;
+
 // Player Create Event
 enum PlayerState {
     Idle,
