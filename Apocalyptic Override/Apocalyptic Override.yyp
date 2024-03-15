@@ -52,6 +52,7 @@
     {"id":{"name":"fontExit2_obj","path":"objects/fontExit2_obj/fontExit2_obj.yy",},},
     {"id":{"name":"player_death_spr","path":"sprites/player_death_spr/player_death_spr.yy",},},
     {"id":{"name":"small_street_plant1_obj","path":"objects/small_street_plant1_obj/small_street_plant1_obj.yy",},},
+    {"id":{"name":"enemy_death_spr","path":"sprites/enemy_death_spr/enemy_death_spr.yy",},},
     {"id":{"name":"street_fixture1_obj","path":"objects/street_fixture1_obj/street_fixture1_obj.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"enemy_death","path":"sprites/enemy_death/enemy_death.yy",},},
