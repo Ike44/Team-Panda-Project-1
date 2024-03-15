@@ -5,9 +5,9 @@
 draw_set_font(myFont);
 var myColor = make_colour_rgb(128, 0, 32);
 draw_set_colour(myColor);
-draw_text(650, y, "Play");
+draw_text(643, y, "Play");
 draw_set_colour(c_black);
-draw_text(655, y, "Play");
+draw_text(648, y, "Play");
 
 // Draw closing circle animation
 if (animating) {
