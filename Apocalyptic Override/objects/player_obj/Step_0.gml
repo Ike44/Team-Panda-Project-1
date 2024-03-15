@@ -51,26 +51,18 @@ if (attackCooldown > 0) {
 }
 
 
-// Checks for collision with a bullet
+// Check for collision with a bullet
 if (place_meeting(x, y, bullet_obj) && !isDead) {
     isDead = true;
     state = PlayerState.Dying;
     sprite_index = player_death_spr;
     image_index = 0;
-    image_speed = 1; 
+    image_speed = 3; 
 }
 
-// Process death if player has been hit
-if (isDead && state != PlayerState.Dying) {
-    state = PlayerState.Dying;
-    sprite_index = player_death_spr;
-    image_index = 0;
-    image_speed = .5;
-}
-
-// Process the end of the death animation
+// Handle the end of the death animation
 if (state == PlayerState.Dying && image_index >= image_number - 1) {
-    room_goto(GameOver);
+    room_goto(GameOver); 
 }
 
 // Apply speed
