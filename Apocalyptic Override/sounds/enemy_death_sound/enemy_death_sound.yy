@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "enemy_death_sound.mp3",
   "type": 0,
-  "volume": 0.5,
+  "volume": 0.1,
 }

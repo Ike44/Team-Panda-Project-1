@@ -10,3 +10,4 @@ if (state != PlayerState.Dying) {
     image_index = 0;
     image_speed = 1; 
 }
+audio_play_sound(damage_sound, 10, false);
