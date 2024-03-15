@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "game_over_sound.mp3",
   "type": 0,
-  "volume": 0.6,
+  "volume": 0.5,
 }

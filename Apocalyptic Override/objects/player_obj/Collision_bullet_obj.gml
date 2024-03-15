@@ -4,5 +4,10 @@ if (instance_exists(bullet_obj)) {
 	alarm[0] = room_speed * 2;
 }
 
-room_goto(GameOver);
-
+if (state != PlayerState.Dying) {
+    state = PlayerState.Dying;
+    sprite_index = player_death_spr;
+    image_index = 0;
+    image_speed = 1; 
+}
+audio_play_sound(damage_sound, 10, false);
