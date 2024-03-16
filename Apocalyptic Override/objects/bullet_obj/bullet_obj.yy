@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bullet",
-    "path": "sprites/bullet/bullet.yy",
+    "name": "enemyBullet_spr",
+    "path": "sprites/enemyBullet_spr/enemyBullet_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

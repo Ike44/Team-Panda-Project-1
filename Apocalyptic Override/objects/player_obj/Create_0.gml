@@ -11,5 +11,5 @@ enum PlayerState {
 
 state = PlayerState.Idle;
 attackCooldown = 0; // Cooldown period 
-isDead = false; // A flag to indicate if the player is dead
+isDead = false; 
 

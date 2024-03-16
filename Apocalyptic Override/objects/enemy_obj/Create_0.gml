@@ -7,5 +7,6 @@ enum EnemyState {
 }
 
 state = EnemyState.Alive;
+alarm[1] = 3 * room_speed;
 
 
