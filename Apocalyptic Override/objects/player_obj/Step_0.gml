@@ -1,8 +1,8 @@
 // Player Create Event
 charspeed_x = 0;
 charspeed_y = 0;
-max_speed = 20; // Set your desired maximum speed
-diagonal_speed = max_speed - 1; // Adjust diagonal speed
+max_speed = 20; 
+diagonal_speed = max_speed - 1; 
 
 acceleration = 5;
 deceleration = 2;
@@ -34,34 +34,23 @@ if (keyboard_check_pressed(vk_space) && state != PlayerState.Attacking && state 
     sprite_index = player_attack_spr; 
     image_index = 0; 
     image_speed = 2; 
-    attackCooldown = room_speed * 1; // 1 second cooldown
+    attackCooldown = room_speed * 1;
+
+    // Create Projectile
+    var proj = instance_create_layer(x, y, "instances_1", swordSlash_obj);
+    proj.direction = image_xscale == 1 ? 0 : 180; // Projectile direction based on player direction
+    proj.speed = 5; 
+	proj.depth = -5; 
 }
+
 
 // Check if attack animation is finished
 if (state == PlayerState.Attacking && image_index >= image_number - 1) {
     state = PlayerState.Idle;
-    sprite_index = player_idle_spr; // Return to idle sprite after attack
+    sprite_index = player_idle_spr; // Returns to idle sprite 
     image_speed = 1; 
 }
 
-// During the attack
-if (state == PlayerState.Attacking && floor(image_index) == 4) {
-    // Collision check with enemy_obj
-    var enemy_hit = instance_place(x, y, enemy_obj);
-    if (enemy_hit != noone) { 
-        with (enemy_hit) {
-            // Start enemy death animation
-            sprite_index = enemy_death_spr;
-            image_index = 0;
-            image_speed = 1;
-            alarm[2] = image_number;
-        }
-    }
-}
-
-if (state == PlayerState.Attacking && image_index >= image_number - 1 && attackHit) {
-    attackHit = false;
-}	
 	
 // Check for collision with a bullet
 if (place_meeting(x, y, bullet_obj) && !isDead) {

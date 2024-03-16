@@ -13,7 +13,7 @@ if (animating) {
     if (animation_progress >= 1) {
         animating = false; // Reset the flag
         animation_progress = 0; // Reset the progress
-        room_goto(Credits); // Change the room after the animation finishes
+        room_goto(VictoryRoom); // Change the room after the animation finishes
     }
 }
 
