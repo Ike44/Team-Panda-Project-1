@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "bullet",
-  "bbox_bottom": 111,
+  "name": "bossBullet_spr",
+  "bbox_bottom": 125,
   "bbox_left": 53,
-  "bbox_right": 150,
-  "bbox_top": 104,
+  "bbox_right": 152,
+  "bbox_top": 91,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "bullet",
+    "name": "bossBullet_spr",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c87f6ca7-b38a-4bf5-a998-22a87833eb07","path":"sprites/bullet/bullet.yy",},},},"Disabled":false,"id":"30183c8f-5648-49bc-8c57-987d7d878477","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c87f6ca7-b38a-4bf5-a998-22a87833eb07","path":"sprites/bossBullet_spr/bossBullet_spr.yy",},},},"Disabled":false,"id":"756bb0a6-52d2-4aa9-8cd8-069ae4f04049","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
